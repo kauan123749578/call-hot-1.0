@@ -1,6 +1,6 @@
 // Helper para fazer chamadas à API
-const API_URL = process.env.NEXT_PUBLIC_API_URL || (typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3000');
-const WS_URL = process.env.NEXT_PUBLIC_WS_URL || (typeof window !== 'undefined' ? window.location.origin.replace('http', 'ws').replace('https', 'wss') : 'ws://localhost:3001');
+const API_URL = process.env.NEXT_PUBLIC_API_URL || (typeof window !== 'undefined' ? window.location.origin : 'http://localhost:8080');
+const WS_URL = process.env.NEXT_PUBLIC_WS_URL || (typeof window !== 'undefined' ? window.location.origin.replace('http', 'ws').replace('https', 'wss') : 'ws://localhost:8081');
 
 export function getApiUrl(path: string): string {
   // Se estiver em desenvolvimento ou a API_URL for diferente do origin, usar API_URL
